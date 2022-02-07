@@ -1,14 +1,16 @@
 :root{
---primary-font-family: font-family: 'Roboto', sans-serif;
---secondary-font-family:  font-family: 'Raleway', sans-serif;
---main-text-color:rgba(33, 33, 33, 1);
---second-text-color:rgba(117, 117, 117, 1);
+--primary-font-family: 'Roboto', sans-serif;
+--secondary-font-family: 'Raleway', sans-serif;
+--main-text-color:#212121;
+--second-text-color:#757575;
+--white-text-color: #FFFFFF;
 --accent-color: #2196F3;
 --accent-button-color: #188CE8;
+--background-color: #2F303A;
 }
-/* body{
+body{
     font-family: var(--primary-font-family);
-} */
+}
 .list {
     list-style: none;
   }
@@ -16,56 +18,168 @@
 .link {
     text-decoration: none;
   }
-  /* ========= START COMPONENTS ========= */
-.navigation{
-    font-family: var(--primary-font-family);
-    font-weight: 500;
-}
-contact-links-list list{
+/* ========= START HEADER ========= */
+.logo{
+    color: var(--main-text-color);
     font-family: var(--secondary-font-family);
-}
-.logo link{
-    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2196F3;
+    letter-spacing: 0.03em;
   }
   .logo span{
       color: var(--accent-color);
   }
-  .hero_button{
+  .navigation{
+    font-family: var(--primary-font-family);
+    font-weight: 500;
+}
+.nav-list-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+.nav-list-link:hover,
+.nav-list-link:focus{
+    color: var(--accent-color);
+}
+.contact-links-list-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.contact-links-list-link:hover,
+.contact-links-list-link:focus{
+    color: var(--accent-color);
+}
+/* ========= END HEADER ========= */
+
+/* ========= START HERO ========= */
+.hero{
+    background-color: var(--background-color);
+    font-family: var(--primary-font-family);
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+.hero-title{
+    color:var(--white-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero_button{
     font-family: inherit;
+    width: 200px;
+    height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
     background-color: #2196F3;
-    color:rgba(255, 255, 255, 1);
+    color:var(--white-text-color);
     border:0;
     cursor: pointer;
     }
 .hero_button:hover{
     background-color: var(--accent-button-color);
 }
-.hero{
-    background-color: var(--main-text-color);
-    color: rgba(255, 255, 255, 1) ;
-    font-weight: 900;
-    text-align: center;
-}
-/* .hero-title{
-    position: absolute;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-     */
-    /* or 136% */
-    /* text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+/* ========= END HERO ========= */
 
-    }
+/* ========= START ABOUT US ========= */
+.about{
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+.about-item-title{
+    line-height: 1.14;
+    height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.about-text-item{
+    line-height: 1.71;
+    font-weight: 400;
+    color: var(--second-text-color);
+    height: 75px;
+}
+/* ========= END ABOUT US ========= */
+
+/* ========= START OUR WORK ========= */
+.title title-theme-dark{
+    font-style: 700;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* ========= END OUR WORK ========= */
+
+/* ========= START OUR TEAM ========= */
+.employees-section{
+    background: #F5F4FA;
+}
+.employees-card{
+    width: 270px;
+    height: 368px;
+    background: #FFFFFF;
+}
+.employees-name{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.employees-position{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--second-text-color);
+}
+/* ========= END OUR TEAM ========= */
+
+/* ========= START FOOTER ========= */
+.footer{
+    background-color: var(--background-color);
+    height: 252px;
+}
+.footer-logo{
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.92;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+    width: 145px;
+    height: 31px;
+}
+.footer-logo span{
+    color: var(--accent-color);
+}
+.address-info{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+    width: 231px;
+    height: 21px;
+}
+.contact-list-link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
