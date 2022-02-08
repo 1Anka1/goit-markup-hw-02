@@ -9,7 +9,10 @@
 --background-color: #2F303A;
 }
 body{
+    margin:0;
+    padding:0;
     font-family: var(--primary-font-family);
+    color: var(--main-text-color);
 }
 .list {
     list-style: none;
@@ -112,19 +115,19 @@ body{
 /* ========= END ABOUT US ========= */
 
 /* ========= START OUR WORK ========= */
-.title title-theme-dark{
+.title {
     font-style: 700;
-    font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-}
+  }
 /* ========= END OUR WORK ========= */
 
 /* ========= START OUR TEAM ========= */
 .employees-section{
     background: #F5F4FA;
+    text-align: center;
 }
 .employees-card{
     width: 270px;
@@ -151,7 +154,6 @@ color: var(--second-text-color);
 /* ========= START FOOTER ========= */
 .footer{
     background-color: var(--background-color);
-    height: 252px;
 }
 .footer-logo{
     font-family: var(--secondary-font-family);
@@ -160,26 +162,63 @@ color: var(--second-text-color);
     line-height: 1.92;
     letter-spacing: 0.03em;
     color: var(--white-text-color);
-    width: 145px;
-    height: 31px;
 }
 .footer-logo span{
     color: var(--accent-color);
 }
 .address-info{
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white-text-color);
-    width: 231px;
-    height: 21px;
 }
 .contact-list-link{
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+/* ========= END FOOTER ========= */
+/* ========= START PORTFOLIO ========= */
+.hero-portfolio-buttom{
+    text-align: center;
+    font-family: inherit;
+}
+.modal-btn{
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    width: 130px;
+    height: 38px;
+    border:0;
+    cursor: pointer;
+}
+.modal-btn:hover,
+.modal-btn:focus{
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+}
+/* ========= PORTFOLIO PROJECT ========= */
+.project-list-item{
+    width: 370px;
+    height: 404px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+.project-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.187;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
 }
