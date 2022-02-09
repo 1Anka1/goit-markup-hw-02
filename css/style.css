@@ -21,6 +21,9 @@ body{
 .link {
     text-decoration: none;
   }
+.navigation a.current{
+    color: #2196F3;
+}
 /* ========= START HEADER ========= */
 .logo{
     color: var(--main-text-color);
@@ -180,16 +183,14 @@ color: var(--second-text-color);
 /* ========= END FOOTER ========= */
 /* ========= START PORTFOLIO ========= */
 .hero-portfolio-buttom{
-    text-align: center;
     font-family: inherit;
 }
 .modal-btn{
+    font-family: inherit;
     background-color: #F5F4FA;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    width: 130px;
-    height: 38px;
     border:0;
     cursor: pointer;
 }
