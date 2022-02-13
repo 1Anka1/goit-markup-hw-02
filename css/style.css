@@ -8,6 +8,9 @@
 --accent-button-color: #188CE8;
 --background-color: #2F303A;
 }
+*{
+    box-sizing: border-box;
+}
 body{
     margin:0;
     padding:0;
@@ -16,10 +19,15 @@ body{
 }
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
 .link {
     text-decoration: none;
+  }
+  .nav-list list{
+      display: flex;
   }
 .navigation a.current{
     color: #2196F3;
@@ -39,8 +47,15 @@ body{
   .navigation{
     font-family: var(--primary-font-family);
     font-weight: 500;
+  }
+  .header{
+    display: flex;
+  }
+.nav-list{
+    display: flex;
 }
 .nav-list-link{
+    padding: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
